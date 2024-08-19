@@ -4,22 +4,7 @@ public class ConcretePartFactory01 implements CarPartFactory {
 
     @Override
     public Engine buildEngine(){
-        return new Engine() {
-            @Override
-            public int getNumberOfPistons() {
-                return 6;
-            }
-
-            @Override
-            public int getSize() {
-                return 11000;
-            }
-
-            @Override
-            public int getFuelConsumption() {
-                return 154889;
-            }
-        };
+        return new ConcreateEngine01(14, 46, 8);
     }
 
     @Override
@@ -30,5 +15,10 @@ public class ConcretePartFactory01 implements CarPartFactory {
                 return color;
             }
         };
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

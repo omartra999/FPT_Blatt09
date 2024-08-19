@@ -30,4 +30,13 @@ public class Car {
     private boolean testDrive(){
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "engine=" + engine +
+                ", seats=" + seats +
+                ", carColor=" + carColor +
+                '}';
+    }
 }
